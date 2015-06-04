@@ -1,6 +1,7 @@
 <!doctype html>
 <html class="no-js">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Práctica validación formularios</title>
     <meta name="description" content="">
@@ -9,27 +10,188 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-  </head>
-  <body>
+</head>
 
-    <div class="hero-unit">
-      <h1>Práctica validación formularios</h1>
-      <p>Aquí debería ir el enlace a <a href="https://github.com/juanda99/practica-validacion-formularios">tu respositorio en GitHub</a>, donde estará la versión de desarrollo.</p>
+<body>
+    <div id="cabecera">
+        <h1>Practica validacion de formulario.</h1>
+        <p>Repositorio en github:<a href="https://github.com/ventu92/practica-validacion-formularios" target="_blank"> Clic aqui</a></p>
+        <div id="separador"><p></p></div>
     </div>
-
-
+    <div id="formulario-entero">
+        <div class="container">
+            <h2>Información de Contacto:</h2>
+            <form class="form-horizontal" id="formulario" novalidate>
+                <div class="form-group">
+                    <label for="nombre" class="col-sm-2 control-label">Nombre</label>
+                    <div class="col-sm-4">
+                        <input required="true" type="text" class="form-control lettersonly" name="nombre" id="nombre" placeholder="Introduce tu nombre">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="apellidos" class="col-sm-2 control-label">Apellidos</label>
+                    <div class="col-sm-4">
+                        <input required="true" type="text" class="form-control" name="apellidos" id="apellidos" placeholder="Introduce tus apellidos">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="telefono" class="col-sm-2 control-label">Telefono</label>
+                    <div class="col-sm-4">
+                        <input required="true" type="text" class="form-control digits" name="telefono" id="telefono" placeholder="Introduce tu telefono">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-4">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="emailConf" class="col-sm-2 control-label">Confirma Email</label>
+                    <div class="col-sm-4">
+                        <input type="email" class="form-control" name="emailConf" id="emailConf" placeholder="Repetir Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">¿Cómo nos has conocido?</label>
+                    <div class="col-sm-9">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="underwear" required> Prefiero no contestar
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="underwear" required> Publicidad
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="underwear" required> Profesionales del sector
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="underwear" required> Internet
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="underwear" required> A través de un amigo o conocido
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="container">
+            <h2>Datos de facturación:</h2>
+            <form class="form-horizontal" id="formulario2" novalidate>
+                <div class="form-group">
+                    <label for="demandante" class="col-sm-2 control-label">Demandante</label>
+                    <div class="col-sm-4">
+                        <select id="demandante" name="demandante" class="form-control">
+                            <option value="1">Particular</option>
+                            <option value="2">Empresa</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="nif" class="col-sm-2 control-label">CIF/NIF</label>
+                    <div class="col-sm-4">
+                        <input required="true" type="text" class="form-control " name="nif" id="nif" placeholder="Introduce tu NIF">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="empresa" class="col-sm-2 control-label">Nombre/Empresa</label>
+                    <div class="col-sm-4">
+                        <input required="true" type="text" class="form-control" name="empresa" id="empresa" placeholder="Introduce tu nombre de empresa">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="direccion" class="col-sm-2 control-label">Dirección</label>
+                    <div class="col-sm-4">
+                        <input required="true" type="text" class="form-control " name="direccion" id="direccion" placeholder="Introduce tu direccion">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="cp" class="col-sm-2 control-label">CP</label>
+                    <div class="col-sm-4">
+                        <input required="true" type="text" class="form-control digits" name="cp" id="cp" placeholder="Introduce tu cp">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="localidad" class="col-sm-2 control-label">Localidad</label>
+                    <div class="col-sm-4">
+                        <input required="true" type="text" class="form-control" name="localidad" id="localidad" placeholder="Introduce tu localidad">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="provincia" class="col-sm-2 control-label">Provincia</label>
+                    <div class="col-sm-4">
+                        <input required="true" type="text" class="form-control" name="provincia" id="provincia" placeholder="Introduce tu provincia">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="pais" class="col-sm-2 control-label">País</label>
+                    <div class="col-sm-4">
+                        <input required="true" type="text" class="form-control " name="pais" id="pais" placeholder="Introduce tu pais">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="IBAN" class="col-sm-2 control-label">Código IBAN</label>
+                    <div class="col-sm-4">
+                        <input required="true" type="text" class="form-control lettersonly" name="IBAN" id="IBAN" placeholder="Introduce tu IBAN">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="container">
+            <h2>Datos de acceso:</h2>
+            <form class="form-horizontal" id="formulario3" novalidate>
+                <div class="form-group">
+                    <label for="usuario" class="col-sm-2 control-label">Usuario</label>
+                    <div class="col-sm-4">
+                        <input required="true" type="text" class="form-control" name="usuario" id="usuario" placeholder="Introduce tu usuario">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="contraseña" class="col-sm-2 control-label">Contraseña</label>
+                    <div class="col-sm-4">
+                        <input required="true" type="password" class="form-control lettersonly" name="contraseña" id="contraseña" placeholder="Introduce contraseña">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="contraseña2" class="col-sm-2 control-label">Repetir contraseña)</label>
+                    <div class="col-sm-4">
+                        <input required="true" type="password" class="form-control lettersonly" name="contraseña2" id="contraseña2" placeholder="Repite la contraseña">
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        <button type="submit" class="btn btn-default">Enviar</button>
+    </div>
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery-validate/dist/jquery.validate.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/jquery.complexify.js/jquery.complexify.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-
-        <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+    <!-- build:js({app,.tmp}) scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/validate.js"></script>
+    <script src="scripts/additional-methods.js"></script>
+    <!-- endbuild -->
+    </div>
 </body>
+
 </html>

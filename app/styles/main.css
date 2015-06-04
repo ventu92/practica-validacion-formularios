@@ -27,3 +27,44 @@ body {
   color: #000;
   padding: 0.2em 0;
 }
+
+#cabecera{
+  display: inline;
+  position: fixed;
+  z-index: 50;
+  color: white;
+  background: #578FAA;
+  width: 100%;
+}
+#cabecera h1,p{
+  margin-left: 5%;
+}
+#cabecera a{
+  color:green;
+}
+#cabecera a:hover{
+  color:black;
+}
+#separador{
+  display: block;
+  position: fixed;
+  z-index: 50;
+  background:black;
+  height: 0.5%;
+  width: 100%;
+}
+#formulario-entero{
+  float: left;
+  margin-top: 100px;
+  margin-left: 5%;
+  margin-bottom: 7%;
+}
+.btn:hover{
+  background: #88CC88;
+  color:white;
+}
+.btn{
+  margin-top: 5%;
+  background: #55AA55;
+  color:black;
+}
