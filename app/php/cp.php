@@ -3,9 +3,9 @@
 // ini_set('display_errors', '1');
 /* Definimos los parámetros de conexión con la bbdd: */
 
-$dbinfo = "mysql:dbname=provincias;host=localhost";
-$user = "root";
-$pass = "root";
+$dbinfo = "mysql:dbname=alexventura_provincias;host=localhost";
+$user = "alexventura_root";
+$pass = "Vo0olare.";
 
 //Nos intentamos conectar:
 try {
