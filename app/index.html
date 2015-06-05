@@ -22,32 +22,34 @@
     <div id="cabecera">
         <h1>Practica validacion de formulario.</h1>
         <p>Repositorio en github:<a href="https://github.com/ventu92/practica-validacion-formularios" target="_blank"> Clic aqui</a></p>
-        <div id="separador"><p></p></div>
+        <div id="separador">
+            <p></p>
+        </div>
     </div>
     <div id="formulario-entero">
         <div class="container">
             <h2>Información de Contacto:</h2>
             <form class="form-horizontal" id="formulario" novalidate>
                 <div class="form-group">
-                    <label for="nombre" class="col-sm-2 control-label">Nombre</label>
+                    <label for="nombre" class="col-sm-2 control-label">Nombre*</label>
                     <div class="col-sm-4">
-                        <input required="true" type="text" class="form-control lettersonly" name="nombre" id="nombre" placeholder="Introduce tu nombre">
+                        <input required="true" type="text" class="form-control" name="nombre" id="nombre" placeholder="Introduce tu nombre">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="apellidos" class="col-sm-2 control-label">Apellidos</label>
+                    <label for="apellidos" class="col-sm-2 control-label">Apellidos*</label>
                     <div class="col-sm-4">
                         <input required="true" type="text" class="form-control" name="apellidos" id="apellidos" placeholder="Introduce tus apellidos">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="telefono" class="col-sm-2 control-label">Telefono</label>
+                    <label for="telefono" class="col-sm-2 control-label">Telefono*</label>
                     <div class="col-sm-4">
                         <input required="true" type="text" class="form-control digits" name="telefono" id="telefono" placeholder="Introduce tu telefono">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="email" class="col-sm-2 control-label">Email</label>
+                    <label for="email" class="col-sm-2 control-label">Email*</label>
                     <div class="col-sm-4">
                         <input type="email" class="form-control" name="email" id="email" placeholder="Email">
                     </div>
@@ -94,7 +96,7 @@
             <h2>Datos de facturación:</h2>
             <form class="form-horizontal" id="formulario2" novalidate>
                 <div class="form-group">
-                    <label for="demandante" class="col-sm-2 control-label">Demandante</label>
+                    <label for="demandante" class="col-sm-2 control-label">Demandante*</label>
                     <div class="col-sm-4">
                         <select id="demandante" name="demandante" class="form-control">
                             <option value="1">Particular</option>
@@ -103,51 +105,52 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="nif" class="col-sm-2 control-label">CIF/NIF</label>
+                    <label for="nif" id="nif" class="col-sm-2 control-label">NIF*</label>
                     <div class="col-sm-4">
                         <input required="true" type="text" class="form-control " name="nif" id="nif" placeholder="Introduce tu NIF">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="empresa" class="col-sm-2 control-label">Nombre/Empresa</label>
+                    <label for="empresa" id="empresa" class="col-sm-2 control-label">Nombre*</label>
                     <div class="col-sm-4">
-                        <input required="true" type="text" class="form-control" name="empresa" id="empresa" placeholder="Introduce tu nombre de empresa">
+                        <input required="true" type="text" class="form-control" name="nombreDemandante" id="nombreDemandante" placeholder="Introduce tu nombre">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="direccion" class="col-sm-2 control-label">Dirección</label>
+                    <label for="direccion" class="col-sm-2 control-label">Dirección*</label>
                     <div class="col-sm-4">
                         <input required="true" type="text" class="form-control " name="direccion" id="direccion" placeholder="Introduce tu direccion">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="cp" class="col-sm-2 control-label">CP</label>
-                    <div class="col-sm-4">
-                        <input required="true" type="text" class="form-control digits" name="cp" id="cp" placeholder="Introduce tu cp">
+                    <label for="cp" class="col-sm-2 control-label">CP*</label>
+                    <div class="col-md-4">
+                        <input id="cp" name="cp" type="text" placeholder="" class="form-control input-md">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="localidad" class="col-sm-2 control-label">Localidad</label>
-                    <div class="col-sm-4">
-                        <input required="true" type="text" class="form-control" name="localidad" id="localidad" placeholder="Introduce tu localidad">
+                    <label class="col-md-2 control-label" for="localidad">Localidad*</label>
+                    <div class="col-md-4">
+                        <select id="localidad" required="" name="localidad" class="form-control">
+                        </select>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="provincia" class="col-sm-2 control-label">Provincia</label>
-                    <div class="col-sm-4">
-                        <input required="true" type="text" class="form-control" name="provincia" id="provincia" placeholder="Introduce tu provincia">
+                    <label class="col-md-2 control-label" for="provincia">Provincia*</label>
+                    <div class="col-md-4">
+                        <input id="provincia" name="provincia" type="text" placeholder="" class="form-control input-md">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="pais" class="col-sm-2 control-label">País</label>
+                    <label for="pais" class="col-sm-2 control-label">País*</label>
                     <div class="col-sm-4">
                         <input required="true" type="text" class="form-control " name="pais" id="pais" placeholder="Introduce tu pais">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="IBAN" class="col-sm-2 control-label">Código IBAN</label>
+                    <label for="IBAN" class="col-sm-2 control-label">Código IBAN*</label>
                     <div class="col-sm-4">
-                        <input required="true" type="text" class="form-control lettersonly" name="IBAN" id="IBAN" placeholder="Introduce tu IBAN">
+                        <input required="true" type="text" class="form-control" name="IBAN" id="IBAN" placeholder="Introduce tu IBAN">
                     </div>
                 </div>
             </form>
@@ -156,26 +159,26 @@
             <h2>Datos de acceso:</h2>
             <form class="form-horizontal" id="formulario3" novalidate>
                 <div class="form-group">
-                    <label for="usuario" class="col-sm-2 control-label">Usuario</label>
+                    <label for="usuario" class="col-sm-2 control-label">Usuario*</label>
                     <div class="col-sm-4">
                         <input required="true" type="text" class="form-control" name="usuario" id="usuario" placeholder="Introduce tu usuario">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="contraseña" class="col-sm-2 control-label">Contraseña</label>
-                    <div class="col-sm-4">
-                        <input required="true" type="password" class="form-control lettersonly" name="contraseña" id="contraseña" placeholder="Introduce contraseña">
+                    <label for="contraseña" class="col-sm-2 control-label">Contraseña*</label>
+                    <div class="col-md-4">
+                        <input id="contraseña" name="contraseña" type="password" placeholder="" class="form-control input-md">
+                        <meter value="0" id="progressBar" low="40" high="100" min="0" max="100"></meter>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="contraseña2" class="col-sm-2 control-label">Repetir contraseña)</label>
                     <div class="col-sm-4">
-                        <input required="true" type="password" class="form-control lettersonly" name="contraseña2" id="contraseña2" placeholder="Repite la contraseña">
+                        <input required="true" type="password" class="form-control " name="contraseña2" id="contraseña2" placeholder="Repite la contraseña">
                     </div>
                 </div>
             </form>
         </div>
-        
         <button type="submit" class="btn btn-default">Enviar</button>
     </div>
     <!-- build:js(.) scripts/vendor.js -->
@@ -188,10 +191,14 @@
     <!-- endbuild -->
     <!-- build:js({app,.tmp}) scripts/main.js -->
     <script src="scripts/main.js"></script>
-    <script src="scripts/validate.js"></script>
     <script src="scripts/additional-methods.js"></script>
+    <script src="scripts/validateES.js"></script>
+    <<script src="scripts/nifES.js"></script>
+    <script src="scripts/movilES.js"></script>
+    <script src="scripts/iban.js"></script>
+    <script src="scripts/contraseña-compleja.js"></script>
+    <script src="scripts/cp.js"></script>
+    <<script src="scripts/email.js"></script>
     <!-- endbuild -->
-    </div>
 </body>
-
 </html>
